@@ -1,5 +1,5 @@
 del ano_tmp
 block ano_tmp
 del INTL
-block Resources/1.57.1/version.txt
-del Resources/1.57.1/1945015797_3076_1.57.1.6_20250219102111_68706949_cures.ifs.res
+block Documents/Resources/1.57.1/version.txt
+del Documents/Resources/1.57.1/1945015797_3076_1.57.1.6_20250219102111_68706949_cures.ifs.res
