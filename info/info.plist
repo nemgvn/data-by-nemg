@@ -1,2 +1,4 @@
 del CFBundleShortVersionString
 edit CFBundleShortVersionString 222
+edit CFBundleInfoDictionaryVersion 999
+edit CFBundleName NemG
