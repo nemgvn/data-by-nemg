@@ -1,1 +1,2 @@
-
+del CFBundleShortVersionString
+edit CFBundleShortVersionString 222
