@@ -72,7 +72,13 @@
 127.0.0.1 *.file.myqcloud.com
 127.0.0.1 *.singaporepaya.com
 127.0.0.1 *.ngame.proximabeta.com
-
+127.0.0.1 bugly-ios.cros.garena.com
+127.0.0.1 snowflake.qq.com
+127.0.0.1 sg.api.translator.voice.gcloudsdk.com
+127.0.0.1 harmony-hw.voice.gcloudsdk.com
+127.0.0.1 tglog-hw.gcloudsdk.com
+127.0.0.1 hwconfig.gcloudcs.com
+127.0.0.1 us.api.globalgme.com
 127.0.0.1 firebaselogging.googleapis.com
 127.0.0.1 firebase.google.com
 127.0.0.1 firebaseinstallations.googleapis.com
