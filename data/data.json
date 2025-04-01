@@ -1,0 +1,14 @@
+{
+  "key:ccc": {
+    "timeend": "27/02/2099",
+    "status": true
+  },
+  "key:bbbb": {
+    "timeend": "27/02/2099",
+    "status": false
+  },
+  "key:zzz": {
+    "timeend": "01/01/2024",
+    "status": true
+  }
+}
