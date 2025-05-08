@@ -1,43 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>%title%</title>
+    <title>{{title}}</title>
+
     <link rel="stylesheet" href="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/css/bootstrap.css">
     <link rel="stylesheet" href="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/css/bootstrap-theme.css">
     <link rel="stylesheet" href="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/css/jquery.fileupload.css">
     <link rel="stylesheet" href="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/css/index.css">
+
     <!--[if lt IE 9]>
-      <script type="text/javascript" src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/html5shiv.min.js"></script>
-      <script type="text/javascript" src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/respond.min.js"></script>
+      <script src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/html5shiv.min.js"></script>
+      <script src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/jquery.min.js"></script>
-    <script type="text/javascript" src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/jquery.ui.widget.js"></script>
-    <script type="text/javascript" src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/jquery.jeditable.js"></script>
-    <script type="text/javascript" src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/jquery.fileupload.js"></script>
-    <script type="text/javascript" src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/jquery.iframe-transport.js"></script>
-    <script type="text/javascript" src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/tmpl.min.js"></script>
-    <script type="text/javascript">
-      var _device = "%device%";
+
+    <script src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/jquery.min.js"></script>
+    <script src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/jquery.ui.widget.js"></script>
+    <script src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/jquery.jeditable.js"></script>
+    <script src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/jquery.fileupload.js"></script>
+    <script src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/jquery.iframe-transport.js"></script>
+    <script src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/bootstrap.min.js"></script>
+    <script src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/tmpl.min.js"></script>
+
+    <script>
+      var _device = "{{device}}";
     </script>
-    <script type="text/javascript" src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/index.js"></script>
+
+    <script src="https://raw.githubusercontent.com/ntnamk3/data-by-nemg/thenamk3/document/js/index.js"></script>
   </head>
+
   <body>
-    
     <div class="container">
-      
       <div class="page-header">
-        <h1>%header%</h1>
+        <h1>{{header}}</h1>
       </div>
-      
-      %prologue%
-      
+
+      {{prologue}}
+
       <div id="alerts"></div>
-      
+
       <div class="btn-toolbar">
         <button type="button" class="btn btn-primary fileinput-button" id="upload-file">
           <span class="glyphicon glyphicon-upload"></span> Upload Files&hellip;
@@ -50,25 +53,24 @@
           <span class="glyphicon glyphicon-refresh"></span> Refresh
         </button>
       </div>
-      
+
       <div class="panel panel-default uploading">
         <div class="panel-heading">File Uploads in Progress</div>
         <table class="table table-striped"><tbody id="uploads"></tbody></table>
       </div>
-      
+
       <div class="panel panel-default">
         <div class="panel-heading">
           <ol class="breadcrumb" id="path"></ol>
         </div>
         <table class="table table-striped"><tbody id="listing"></tbody></table>
       </div>
-      
-      %epilogue%
-      
-      <p class="footer">%footer%</p>
-      
+
+      {{epilogue}}
+
+      <p class="footer">{{footer}}</p>
     </div>
-    
+
     <div class="modal fade" id="create-modal" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -89,7 +91,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="modal fade" id="move-modal" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -110,7 +112,7 @@
         </div>
       </div>
     </div>
-    
+
     <script type="text/x-tmpl" id="template-listing">
       <tr class="row-file">
         <td class="column-icon">
@@ -132,7 +134,7 @@
         </td>
         <td class="column-move">
           <button type="button" class="btn btn-default btn-xs button-move">
-            <span class="glyphicon glyphicon glyphicon-share-alt"></span>
+            <span class="glyphicon glyphicon-share-alt"></span>
           </button>
         </td>
         <td class="column-delete">
@@ -142,7 +144,7 @@
         </td>
       </tr>
     </script>
-    
+
     <script type="text/x-tmpl" id="template-uploads">
       <tr class="row-file">
         <td class="column-icon">
@@ -155,16 +157,15 @@
           <div class="progress">
             <div class="progress-bar" id="progress-bar"></div>
           </div>
-        </ts>
+        </td>
       </tr>
     </script>
-    
+
     <script type="text/x-tmpl" id="template-alert">
       <div class="alert alert-{%=o.level%} alert-dismissable">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong>{%=o.title%}</strong>{%=o.description%}
       </div>
     </script>
-    
   </body>
 </html>
