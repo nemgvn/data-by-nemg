@@ -1,0 +1,12 @@
+[
+    {
+        "version": "1.0.1",
+        "content": "Fixed minor bugs and improved performance.",
+        "download_link": "https://example.com/downloads/update_1.0.1.bin"
+    },
+    {
+        "version": "1.0.2",
+        "content": "Added new features and enhanced security.",
+        "download_link": "https://example.com/downloads/update_1.0.2.bin"
+    }
+]
