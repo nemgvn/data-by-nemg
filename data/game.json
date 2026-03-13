@@ -1,0 +1,14 @@
+{
+  "games": [
+    {
+      "game": "Free Fire",
+      "update_date": "2026-03-13",
+      "download_link": "https://play.google.com/store"
+    },
+    {
+      "game": "PUBG Mobile",
+      "update_date": "2026-03-13",
+      "download_link": "https://play.google.com/store"
+    }
+  ]
+}
