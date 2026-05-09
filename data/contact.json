@@ -1,0 +1,20 @@
+{
+  "author": "Nem'G",
+  "contacts": {
+    "telegram": {
+      "label": "Telegram",
+      "url": "https://t.me/nemgvng",
+      "icon": "telegram"
+    },
+    "facebook": {
+      "label": "Facebook",
+      "url": "https://facebook.com/nemgz",
+      "icon": "facebook"
+    },
+    "website": {
+      "label": "Website",
+      "url": "https://nemg.me",
+      "icon": "globe"
+    }
+  }
+}
